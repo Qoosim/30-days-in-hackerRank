@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 2 Operators</title>
+</head>
+<body>
+    
+    <script>
+
+        let mealCost = 12.00, tipPercent = 20, taxpercent = 8;
+        let tip = 0, tax = 0;
+        let totalCost = 0;
+
+        function mealCostFunc(meal, tipcost, taxcost) {
+            tip += mealCost * (tipPercent / 100);
+            tax += mealCost * (taxpercent / 100);
+            totalCost += mealCost + tip + tax;
+            return (Math.round(totalCost));
+        }
+        console.log(mealCostFunc(mealCost, tipPercent, taxpercent));
+    
+    </script>
+</body>
+</html>

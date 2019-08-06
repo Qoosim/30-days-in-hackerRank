@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 3 Conditional Statements</title>
+</head>
+<body>
+
+    <script>
+        let number = parseInt(prompt("Enter an integer: "));
+
+        function weirdOrNotFunc(n) {
+            if( number % 2 === 1 ) {
+                console.log("Weird");
+            }else if(number % 2 === 0 && (number >= 2 && number <= 5)) {
+                console.log("Not Weird");
+            }else if(number % 2 === 0 && (number >= 6 && number <= 20)) {
+                console.log("Weird");
+            }else if(number % 2 === 0 && number > 20) {
+                console.log("Not Weird");
+            }
+        }
+        weirdOrNotFunc(number);
+    
+    </script>
+    
+</body>
+</html>
